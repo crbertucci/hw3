@@ -1,8 +1,19 @@
 <h1>Places I've Been</h1>
 
-<p> 
-<a href="/mexico_city">Mexico City</a>
-</p>
+<% places = Place.all%>
+
+<ul>
+
+<% for place in places %>
+
+<li>
+<%= place["name"] %>
+</li>
+
+<%end%>
+</ul>
+
+
 
 <p>
 <a href="/charleston">Charleston</a>
@@ -17,6 +28,7 @@
 </p>
 
 <p>
+&nbsp
 </p>
 
 <p>
