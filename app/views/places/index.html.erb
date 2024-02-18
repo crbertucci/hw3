@@ -1,13 +1,14 @@
+<% places = Place.all%>
+
 <h1>Places I've Been</h1>
 
-<% places = Place.all%>
 
 <ul>
 
 <% for place in places %>
 
 <li>
-<%= place["name"] %>
+<a href="/places/<%= places["id"] %>"><%= place["name"] %>
 </li>
 
 <%end%>
@@ -31,7 +32,8 @@
 &nbsp
 </p>
 
+
 <p>
-<a href="/new place">New Place</a>
+<a href="/places/new">New Place</a>
 </p>
 
