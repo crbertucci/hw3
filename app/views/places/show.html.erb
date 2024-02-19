@@ -2,16 +2,12 @@
 
 <h1><%= @place["name"] %></h1>
 
-<h2><%= @entries["title"] %>, <%= @entries["description"] %></h2>
-
-
 <p>
-  <a href="/contacts/new?company_id=<%= @company["id"] %>">New Contact</a>
+  <a href="/entries/new?place_id=<%= @place["id"] %>">New Post</a>
 </p>
 
-<p><a href="/places">Back to All Companies</a></p>
+<p><a href="/places">Back to All Places</a></p>
 
-<form action="/places/<%= @company["id"] %>" method="post">
+<form action="/places/<%= @place["id"] %>" method="post">
   <input type="hidden" name="_method" value="delete">
-  <button>Delete Company</button>
 </form>

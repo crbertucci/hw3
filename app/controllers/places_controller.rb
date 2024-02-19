@@ -6,10 +6,6 @@ class PlacesController < ApplicationController
     # render companies/index view
   end
 
-  def index 
-  #  render :inline => "<h1> Places I've Been</h1>"
-  render :template => "places/index"
-  end
 
 def show
   # find a Place
